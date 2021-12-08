@@ -1,0 +1,43 @@
+:root {
+  --green: #38b2ac;
+  --bg-blue: #012649;
+  --bg-white: #f7fafc;
+  --bg-disabled: #e2e8f0;
+  --bg-blue-700: #4a5568;
+  --grey: #718096;
+  --primary: #3182ce;
+  --black: #333333;
+}
+
+body {
+  margin: 0;
+
+  background-color: var(--bg-blue);
+  padding-block: 4rem;
+  font-family: "Inter", sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+
+.text-green {
+  color: var(--green);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.2px;
+}
+
+.text-info {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.2px;
+  color: var(--black);
+}
