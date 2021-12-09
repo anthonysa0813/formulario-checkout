@@ -4,17 +4,17 @@ import { NavLink } from "react-router-dom";
 const ProgressMenu = () => {
   return (
     <MenuContainer>
-      <NavLink to="#">Cuenta</NavLink>
+      <NavLink to="/">Cuenta</NavLink>
       <div className="separate"></div>
       <i className="icon-check"></i>
       <div className="separate"></div>
 
-      <NavLink to="#">Envió</NavLink>
+      <NavLink to="/send">Envió</NavLink>
       <div className="separate"></div>
       <i className="icon-check"></i>
       <div className="separate"></div>
 
-      <NavLink to="#">Pago</NavLink>
+      <NavLink to="/pay">Pago</NavLink>
     </MenuContainer>
   );
 };

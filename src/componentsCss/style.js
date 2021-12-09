@@ -8,10 +8,11 @@ export const GridContainer = styled.div`
 
 export const FormularioContainer = styled.div`
   grid-column: 1/8;
+  height: 90vh;
   /* border: 1px solid green; */
   background-color: var(--bg-white);
   border-radius: 10px;
-  height: 500px;
+
   display: flex;
   padding: 40px;
   align-items: center;
@@ -34,9 +35,16 @@ export const FormularioContainer = styled.div`
   }
   & input {
     padding: 1rem;
+    width: 100%;
+
     margin-block-start: 1rem;
+    background-color: #e2e8f0;
     border: none;
+    border-radius: 5px;
     outline-color: var(--primary);
+  }
+  & .alert {
+    color: red;
   }
   & .formSend {
     padding: 1rem;
@@ -46,16 +54,21 @@ export const FormularioContainer = styled.div`
     gap: 1rem;
     justify-content: flex-end;
   }
-  & button[type="button"] {
+  & .buttonRoute {
     padding: 20px 27px;
     border: none;
     background-color: var(--primary);
     color: white;
     border-radius: 10px;
+    text-decoration: none;
     &:active {
       transform: scale(1.1);
       transition: 0.3s ease;
     }
+  }
+  & .infoCard {
+    display: flex;
+    gap: 3rem;
   }
 `;
 
@@ -178,6 +191,19 @@ export const MenuContainer = styled.div`
     margin-inline: 1rem;
     height: 1px;
     background-color: black;
+  }
+  & a {
+    text-decoration: none;
+  }
+`;
+
+export const SuccessContainer = styled.div`
+  color: green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & .icon-check {
+    font-size: 8rem;
   }
   & a {
     text-decoration: none;
