@@ -194,8 +194,10 @@ export const ProductContainer = styled.div`
 `;
 
 export const MenuContainer = styled.div`
-  width: 70%;
+  width: 100%;
+
   display: flex;
+
   justify-content: space-between;
   align-items: center;
   & .separate {
@@ -208,6 +210,9 @@ export const MenuContainer = styled.div`
   }
   & a {
     text-decoration: none;
+  }
+  @media (min-width: 768px) {
+    width: 70%;
   }
 `;
 
