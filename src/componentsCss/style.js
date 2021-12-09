@@ -1,20 +1,22 @@
 import styled from "styled-components";
 
 export const GridContainer = styled.div`
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(12, 1fr);
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 600px) {
+    flex-direction: row;
+    gap: 1rem;
+  }
 `;
 
 export const FormularioContainer = styled.div`
-  grid-column: 1/8;
-  height: 90vh;
+  flex: 1 0 100%;
+  height: 100vh;
   /* border: 1px solid green; */
   background-color: var(--bg-white);
-  border-radius: 10px;
 
   display: flex;
-  padding: 40px;
+  padding: 10px;
   align-items: center;
   /* justify-content: center; */
   flex-direction: column;
@@ -26,7 +28,6 @@ export const FormularioContainer = styled.div`
   }
   & form {
     width: 70%;
-    margin-block-start: 36px;
   }
   & .formField {
     display: flex;
@@ -70,12 +71,21 @@ export const FormularioContainer = styled.div`
     display: flex;
     gap: 3rem;
   }
+  @media (min-width: 768px) {
+    flex: 1 0 60%;
+    border-radius: 10px;
+    padding: 40px;
+
+    & form {
+      margin-block-start: 36px;
+    }
+  }
 `;
 
 export const ProductContainer = styled.div`
-  grid-column: 8/13;
+  flex: 1 0 100%;
   background-color: var(--bg-white);
-  border-radius: 10px;
+
   padding: 40px;
   & .productContent {
   }
@@ -176,6 +186,10 @@ export const ProductContainer = styled.div`
     gap: 2rem;
 
     justify-content: space-between;
+  }
+  @media (min-width: 768px) {
+    flex: 1 0 30%;
+    border-radius: 10px;
   }
 `;
 

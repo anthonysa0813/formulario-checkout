@@ -4,7 +4,9 @@ import { NavLink } from "react-router-dom";
 const ProgressMenu = () => {
   return (
     <MenuContainer>
-      <NavLink to="/">Cuenta</NavLink>
+      <NavLink to="/" exact>
+        Cuenta
+      </NavLink>
       <div className="separate"></div>
       <i className="icon-check"></i>
       <div className="separate"></div>

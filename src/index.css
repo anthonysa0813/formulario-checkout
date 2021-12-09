@@ -41,3 +41,9 @@ code {
   line-height: 24.2px;
   color: var(--black);
 }
+
+.active {
+  color: var(--primary);
+  border-bottom: 3px solid var(--primary);
+  font-weight: 500;
+}
